@@ -1,0 +1,19 @@
+.header{
+   margin-bottom: 30px;
+}
+
+.menu{
+    margin-left: 70px;
+}
+
+.link{
+    font-size: 22px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: all .2s;
+}
+
+.link:hover{
+    color: orange;
+}
