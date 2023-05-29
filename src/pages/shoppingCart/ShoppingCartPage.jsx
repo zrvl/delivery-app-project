@@ -22,7 +22,7 @@ const ShoppingCartPage = () => {
       // const resp = await axios.get(`http://127.0.0.1:5000/api/products/filtered?ids=${productsId}`);
       // const resp = await axiosInstance.get(`/products/filtered?ids=${productsId}`);
       // const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/products/filtered?ids=${productsId}`);
-      const resp = await axios.get(`hhttps://delivery-app-2zhg.onrender.com/api/products/filtered?ids=${productsId}`);
+      const resp = await axios.get(`api/products/filtered?ids=${productsId}`);
       const data = await resp.data;
       setProducts(data.products);
     } else {
@@ -40,7 +40,7 @@ const ShoppingCartPage = () => {
       // const resp = await axios.post(`http://127.0.0.1:5000/api/orders`,{name: name, email: email, phone: phone, address: address, products_ids});
       // const resp = await axiosInstance.post(`/orders`,{name: name, email: email, phone: phone, address: address, products_ids});
       // const resp = await axios.post(`https://delivery-app-zhuravel.herokuapp.com/api/orders`,{name: name, email: email, phone: phone, address: address, products_ids});
-      const resp = await axios.post(`https://delivery-app-2zhg.onrender.com/api/orders`,{name: name, email: email, phone: phone, address: address, products_ids});
+      const resp = await axios.post(`api/orders`,{name: name, email: email, phone: phone, address: address, products_ids});
       setName('');
       setEmail('');
       setPhone('');

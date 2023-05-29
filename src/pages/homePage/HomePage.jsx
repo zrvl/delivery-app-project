@@ -12,7 +12,7 @@ const HomePage = () => {
     // const resp = await axios.get(`http://127.0.0.1:5000/api/shops`);
     // const resp = await axiosInstance.get(`/shops`);
     // const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/shops`);
-    const resp = await axios.get(`https://https://delivery-app-2zhg.onrender.com/shops`);
+    const resp = await axios.get(`api/shops`);
     const data = await resp.data;
     setShops(data);
   }
@@ -21,7 +21,7 @@ const HomePage = () => {
     // const resp = await axios.get(`http://127.0.0.1:5000/api/shops/${id}/products`);
     // const resp = await axiosInstance.get(`/shops/${id}/products`);
     // const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/shops/${id}/products`);
-    const resp = await axios.get(`https://delivery-app-2zhg.onrender.com/shops/${id}/products`);
+    const resp = await axios.get(`api/shops/${id}/products`);
     const data = await resp.data.products;
     setProducts(data);
   }
