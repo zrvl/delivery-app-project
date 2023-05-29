@@ -11,7 +11,8 @@ const HomePage = () => {
   const getShops = async () => {
     // const resp = await axios.get(`http://127.0.0.1:5000/api/shops`);
     // const resp = await axiosInstance.get(`/shops`);
-    const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/shops`);
+    // const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/shops`);
+    const resp = await axios.get(`https://https://delivery-app-2zhg.onrender.com/api/shops`);
     const data = await resp.data;
     setShops(data);
   }
@@ -19,7 +20,8 @@ const HomePage = () => {
   const getProducts = async (id) => {
     // const resp = await axios.get(`http://127.0.0.1:5000/api/shops/${id}/products`);
     // const resp = await axiosInstance.get(`/shops/${id}/products`);
-    const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/shops/${id}/products`);
+    // const resp = await axios.get(`https://delivery-app-zhuravel.herokuapp.com/api/shops/${id}/products`);
+    const resp = await axios.get(`https://delivery-app-2zhg.onrender.com/api/shops/${id}/products`);
     const data = await resp.data.products;
     setProducts(data);
   }
